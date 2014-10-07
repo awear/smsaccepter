@@ -1,6 +1,6 @@
 express = require 'express'
 app = express()
-PORT = 9999
+PORT = process.env.PORT || 9999
 
 app.use require('body-parser').raw()
 
